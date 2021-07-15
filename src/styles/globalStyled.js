@@ -10,6 +10,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Oxygen', sans-serif;;
     font-size: 16px;
     line-height: 24px;
+    background: linear-gradient(135deg, #FAD7A1 0%, #E96D71 100%) no-repeat;
   }
 `;
 
