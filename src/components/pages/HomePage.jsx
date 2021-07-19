@@ -1,12 +1,19 @@
 import React from "react";
 import Hero from "../hero/";
+import PreProyect from "../sections/PreProyect";
+import ListProyect from "../sections/ListProyect";
+import Contact from "../sections/Contact";
+
+import { data } from "../../data";
 
 const HomePage = () => {
 	return (
-		<div>
-			<b>Hola soy homePage!</b>
+		<main>
 			<Hero />
-		</div>
+			<PreProyect />
+			<ListProyect proyects={data.proyects} />
+			<Contact />
+		</main>
 	);
 };
 

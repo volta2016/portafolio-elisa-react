@@ -5,7 +5,7 @@ import { TitleH1, TitleSpan } from "./styles";
 const Title = ({ greetings, name }) => (
 	<TitleH1>
 		<TitleSpan>{greetings}</TitleSpan>
-		<TitleSpan>{name}</TitleSpan>
+		<TitleSpan greetings>{name}</TitleSpan>
 	</TitleH1>
 );
 

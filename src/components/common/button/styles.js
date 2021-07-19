@@ -2,9 +2,9 @@ import { Link } from "react-router-dom";
 import styled, { css } from "styled-components";
 
 export const ButtonContainer = styled(Link)`
-	height: 49px;
-	max-width: 250px;
 	cursor: pointer;
+	height: 49px;
+	min-width: 165px;
 	color: ${({ theme }) => theme.colors.primary.dark};
 	border-radius: 90px;
 	border: 2px solid ${({ theme }) => theme.colors.primary.dark};
@@ -16,16 +16,26 @@ export const ButtonContainer = styled(Link)`
 	padding: 12px 24px;
 	text-decoration: none;
 	transition: 0.3s;
+	display: flex;
+	align-items: center;
 	&:hover {
 		background: ${({ theme }) => theme.colors.secondary.secondtwo};
 	}
-
 	${(props) =>
 		props.outline &&
 		css`
-			background: ${({ theme }) => theme.colors.gray.main};
+			background: ${({ theme }) => theme.colors.primary.trans};
 			&:hover {
 				background: ${({ theme }) => theme.colors.gray.light};
 			}
+			& svg {
+				margin-right: 0.5rem;
+			}
+		`}
+	${(props) =>
+		props.send &&
+		css`
+			text-align: center;
+			display: block;
 		`}
 `;

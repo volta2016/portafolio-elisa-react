@@ -3,6 +3,7 @@ const theme = {
 		primary: {
 			main: "#808080",
 			dark: "#0F0A0A",
+			trans: "transparent",
 		},
 		secondary: {
 			secondone: "#42E2B8",
@@ -20,6 +21,7 @@ const theme = {
 	sizeFont: {
 		xxl: "3.688rem", //59px
 		xl: "3rem", //48px
+		lg2: "2.125rem", //34px
 		lg: "1.5rem", //24px
 		md: "1rem",
 		sm: "0.9rem",

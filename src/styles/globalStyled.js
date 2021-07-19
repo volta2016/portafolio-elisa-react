@@ -12,6 +12,9 @@ const GlobalStyle = createGlobalStyle`
     line-height: 24px;
     background: linear-gradient(135deg, #FAD7A1 0%, #E96D71 100%) no-repeat;
   }
+  main {
+    padding: 0 1rem;
+  }
 `;
 
 export default GlobalStyle;

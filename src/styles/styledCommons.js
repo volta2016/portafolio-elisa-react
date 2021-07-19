@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 
-export const Container = styled.div`
+export const Container = styled.section`
 	margin: auto;
 	max-width: 1200px;
 	width: 100%;
@@ -11,6 +11,11 @@ export const Container = styled.div`
 			justify-content: space-between;
 			align-items: center;
 		`}
+	@media (min-width: 768px) {
+		& article:nth-child(2) div > div {
+			order: 0;
+		}
+	}
 	@media (max-width: 992px) {
 		max-width: 960px;
 	}

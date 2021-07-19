@@ -2,7 +2,11 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const HeaderWrapper = styled.header`
-	padding: 2rem 0;
+	background: linear-gradient(80deg, #fad7a1 0%, #e96d71 500%);
+	position: sticky;
+	top: 0;
+	padding: 1rem 1rem;
+	z-index: 1;
 `;
 
 export const LogoLink = styled(Link)`
@@ -25,7 +29,6 @@ export const TitleImportant = styled.h1`
 
 export const LogoImg = styled.img`
 	height: 39px;
-
 	margin-right: 1rem;
 `;
 
