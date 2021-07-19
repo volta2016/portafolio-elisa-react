@@ -1,10 +1,24 @@
 import React from "react";
-import { FooterCopiright, Contain } from "./styles";
+import Heart from "../../icons/Heart";
+import Socials from "../../hero/Socials";
+import Logo from "../header/Logo";
+import { data } from "../../../data";
+import { FooterCopiright, Contain, Copyright, LinkPortfolio } from "./styles";
 export const Footer = () => {
 	return (
-		<div>
-			<i>soy footer</i>
-		</div>
+		<FooterCopiright>
+			<Contain>
+				<Logo />
+				<Copyright>
+					Hecho con <Heart /> © Copyright {new Date().getFullYear()} - Todos los
+					derechos reservados.{" "}
+					<LinkPortfolio to="https://voltauxui.cl/">
+						www.voltauxui.cl
+					</LinkPortfolio>
+				</Copyright>
+				<Socials footer redes={data.redes} />
+			</Contain>
+		</FooterCopiright>
 	);
 };
 

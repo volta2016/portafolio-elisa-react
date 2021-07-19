@@ -19,6 +19,9 @@ export const LinkSocial = styled(Link)`
 	margin-right: 1rem;
 	border: 2px solid #0f0a0a};
 	align-items: center;
+	&:nth-last-child(1) {
+		margin-right: 0;
+	}
 `;
 
 export const Col = styled.div`
