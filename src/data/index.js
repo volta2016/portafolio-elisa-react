@@ -58,4 +58,18 @@ export const data = {
 			},
 		},
 	],
+	menuItems: [
+		{
+			path: "/#hola",
+			name: "Hola",
+		},
+		{
+			path: "/#proyect",
+			name: "Proyectos",
+		},
+		{
+			path: "/#contact",
+			name: "Hablemos",
+		},
+	],
 };

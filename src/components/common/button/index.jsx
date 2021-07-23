@@ -1,10 +1,18 @@
 import React from "react";
-import { ButtonContainer } from "./styles";
+import { ButtonContainer, ButtonSubmit } from "./styles";
 
-const Button = ({ children, link, ...prosp }) => (
-	<ButtonContainer to={link} {...prosp}>
-		{children}
-	</ButtonContainer>
-);
+const Button = ({ children, link, tipo, ...props }) => {
+	return (
+		<>
+			{tipo === "link" ? (
+				<ButtonContainer to={link} {...props}>
+					{children}
+				</ButtonContainer>
+			) : (
+				<ButtonSubmit>{children}</ButtonSubmit>
+			)}
+		</>
+	);
+};
 
 export default Button;

@@ -27,14 +27,15 @@ export const ArrowDown = styled(Link)`
 // Proyects
 
 export const ContainerProyects = styled.article`
-	/* @media (min-width: 768px) {
+	@media (min-width: 768px) {
 		&:nth-child(odd) div > div {
 			order: 2;
 		}
-	} */
+	}
 `;
+
 export const Contain = styled.div`
-	@media (min-width: 768px) {
+	@media (min-width: 769px) {
 		display: flex;
 		align-items: center;
 		gap: 1rem;
@@ -42,9 +43,10 @@ export const Contain = styled.div`
 			props.pro &&
 			css`
 				gap: 1.5rem;
+				padding: 8rem 0;
 			`}
 		${(props) =>
-			props.form &&
+			props.contact &&
 			css`
 				display: flex;
 				flex-direction: column;
@@ -69,6 +71,9 @@ export const ProyectImage = styled.div`
       order: 2;
     }
 	}
+	@media (max-width: 576px) {
+		margin-bottom: 2.5rem 
+	}
 }
 `;
 export const ImagePro = styled.img`
@@ -91,6 +96,9 @@ export const TestimonialsCard = styled.div`
 	@media (min-width: 768px) {
 		padding: 5rem;
 	}
+	@media (max-width: 576px) {
+		padding: 24px;
+	}
 `;
 
 export const Profile = styled.img`
@@ -102,6 +110,7 @@ export const Profile = styled.img`
 export const Form = styled.form`
 	width: 100%;
 	max-width: 544px;
+	margin: auto;
 `;
 
 export const FormGroup = styled.div``;

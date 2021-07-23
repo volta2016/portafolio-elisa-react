@@ -4,7 +4,8 @@ import Socials from "../../hero/Socials";
 import Logo from "../header/Logo";
 import { data } from "../../../data";
 import { FooterCopiright, Contain, Copyright, LinkPortfolio } from "./styles";
-export const Footer = () => {
+
+const Footer = () => {
 	return (
 		<FooterCopiright>
 			<Contain>
@@ -16,7 +17,7 @@ export const Footer = () => {
 						www.voltauxui.cl
 					</LinkPortfolio>
 				</Copyright>
-				<Socials footer redes={data.redes} />
+				<Socials redes={data.redes} />
 			</Contain>
 		</FooterCopiright>
 	);

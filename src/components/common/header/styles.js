@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import styled from "styled-components";
 
 export const HeaderWrapper = styled.header`
@@ -38,15 +39,23 @@ export const NavList = styled.ul`
 	margin: 0;
 	padding: 0;
 	display: flex;
+	@media (max-width: 912px) {
+		display: none;
+	}
 `;
 
-export const NavItem = styled.li`
+export const NavMenu = styled.li`
+	list-style: none;
+`;
+
+export const NavItem = styled(HashLink)`
 	font-size: ${({ theme }) => theme.sizeFont.sm};
 	color: ${({ theme }) => theme.colors.primary.main};
 	font-weight: bold;
 	padding: 0 2rem;
 	transition: 0.3s;
 	cursor: pointer;
+	text-decoration: none;
 	&:hover,
 	&:active {
 		background-color: transparent;
@@ -54,9 +63,10 @@ export const NavItem = styled.li`
 	}
 `;
 
-// export const LogoImg = styled(Link)`
-// 	text-transform: uppercase;
-// 	font-size: ${({ theme }) => theme.sizeFont.sm};
-//
-// 	color: ${({ theme }) => theme.colors.gray.main};
-// `;
+export const Descarga = styled.span`
+	display: none;
+	@media (min-width: 912px) {
+		display: inline-block;
+		margin-right: 0.25rem;
+	}
+`;

@@ -8,7 +8,7 @@ import { SectionPreProyect, ArrowDown } from "./styles";
 let { info, preproyect } = data;
 
 const PreProyect = () => (
-	<SectionPreProyect>
+	<SectionPreProyect id="hola">
 		<TitleHtwo>{info}</TitleHtwo>
 		<Paragraph drop>{preproyect}</Paragraph>
 		<ArrowDown to="#">

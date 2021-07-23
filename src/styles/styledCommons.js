@@ -24,6 +24,5 @@ export const Container = styled.section`
 	}
 	@media (max-width: 576px) {
 		max-width: 540px;
-		padding: 0 15px;
 	}
 `;

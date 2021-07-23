@@ -21,6 +21,7 @@ const theme = {
 	sizeFont: {
 		xxl: "3.688rem", //59px
 		xl: "3rem", //48px
+		lg3: "2.8rem", //34px
 		lg2: "2.125rem", //34px
 		lg: "1.5rem", //24px
 		md: "1rem",

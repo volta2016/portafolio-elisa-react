@@ -3,20 +3,12 @@ import TitleH2 from "../common/Title/TitleH2";
 import Paragraph from "../common/paragraph";
 import Button from "../common/button";
 import { Container } from "../../styles/styledCommons";
-import {
-	Contain,
-	FormGroup,
-	Form,
-	Label,
-	Input,
-	Message,
-	Submit,
-} from "./styles";
+import { Contain, Form, FormGroup, Label, Input, Message } from "./styles";
 
 const Contact = () => {
 	return (
-		<Container id="#contacto">
-			<Contain form>
+		<Container id="contact">
+			<Contain contact>
 				<TitleH2 className="form" proyect>
 					HABLEMOS
 				</TitleH2>
@@ -44,9 +36,7 @@ const Contact = () => {
 							name="message"
 							placeholder="Mensaje"
 						></Message>
-						<Button send type="submit">
-							ENVIAR MENSAJE
-						</Button>
+						<Button type="submit">ENVIAR MENSAJE</Button>
 					</FormGroup>
 				</Form>
 			</Contain>

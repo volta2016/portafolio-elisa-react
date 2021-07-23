@@ -1,13 +1,20 @@
 import React from "react";
-import { NavList, NavItem } from "./styles";
+
+import { NavList, NavItem, NavMenu } from "./styles";
+import { data } from "../../../data";
 
 const NavBar = () => {
+	let { menuItems } = data;
 	return (
 		<>
 			<NavList>
-				<NavItem>Hola</NavItem>
-				<NavItem>Proyectos</NavItem>
-				<NavItem>Hablemos</NavItem>
+				{menuItems.map((item, index) => (
+					<NavMenu key={index}>
+						<NavItem smooth to={item.path}>
+							{item.name}
+						</NavItem>
+					</NavMenu>
+				))}
 			</NavList>
 		</>
 	);

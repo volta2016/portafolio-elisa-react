@@ -14,7 +14,7 @@ import {
 } from "./styles";
 
 const Proyecto = ({ proyect }) => {
-	const { name, description, url, repo, image, testimonial } = proyect;
+	const { name, description, url, image, testimonial, repo } = proyect;
 	return (
 		<ContainerProyects>
 			<Contain pro>
@@ -25,8 +25,10 @@ const Proyecto = ({ proyect }) => {
 					<TitleHtwo proyect>{name}</TitleHtwo>
 					<Paragraph proyect>{description}</Paragraph>
 					<Contain>
-						<Button link={url}>VER PROYECTO</Button>
-						<Button outline link={repo}>
+						<Button tipo="link" link={url}>
+							VER PROYECTO
+						</Button>
+						<Button tipo="link" outline="true" link={repo}>
 							<Github /> VER CÓDIGO
 						</Button>
 					</Contain>

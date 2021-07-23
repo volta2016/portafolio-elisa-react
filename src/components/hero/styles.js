@@ -4,6 +4,12 @@ import { Link } from "react-router-dom";
 export const HeroContainer = styled.div`
 	display: flex;
 	margin-top: 2.4rem;
+	@media (max-width: 576px) {
+		flex-direction: column-reverse;
+	}
+	@media (min-width: 576px) {
+		gap: 1rem;
+	}
 `;
 
 export const SocialNetwork = styled.div`
@@ -28,12 +34,18 @@ export const Col = styled.div`
 	display: flex;
 	flex-direction: column;
 	width: 50%;
+	@media (max-width: 576px) {
+		width: 100%;
+	}
 `;
 
 export const HeroImage = styled.img`
 	width: 100%;
 	object-fit: contain;
 	margin-block-start: -90px;
+	@media (max-width: 912px) {
+		margin-block-start: 0;
+	}
 `;
 
 // export const TitleHero

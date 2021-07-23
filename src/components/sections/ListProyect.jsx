@@ -4,7 +4,7 @@ import { Container } from "../../styles/styledCommons";
 
 const ListProyect = ({ proyects }) => {
 	return (
-		<Container id="#proyect">
+		<Container id="proyect">
 			{proyects.map((proyect, index) => (
 				<Proyecto key={index} proyect={proyect} />
 			))}

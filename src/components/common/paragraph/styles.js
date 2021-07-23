@@ -10,6 +10,7 @@ export const ParagraphContainer = styled.p`
 			font-size: ${({ theme }) => theme.sizeFont.lg};
 			text-align: center;
 			font-weight: 700;
+			margin-top: 1.5rem;
 		`}
 	${(props) =>
 		props.proyect &&
@@ -30,5 +31,8 @@ export const ParagraphContainer = styled.p`
 			opacity: 0.5;
 			margin-top: 0.5rem;
 			letter-spacing: 0.005px;
+			@media (max-width: 576px) {
+				font-size: ${({ theme }) => theme.sizeFont.xs};
+			}
 		`}
 `;

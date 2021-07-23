@@ -13,14 +13,30 @@ export const Contain = styled.div`
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	text-align: center;
+	@media (max-width: 1112px) {
+		flex-direction: column-reverse;
+	}
+	& > a {
+		display: flex;
+	}
+	@media (max-width: 576px) {
+		& > a {
+			display: none;
+		}
+	}
 `;
 
 export const Copyright = styled.p`
 	display: flex;
 	align-items: center;
 	font-weight: 400;
+	text-align: center;
 	& > svg {
 		margin: 0 0.3rem;
+	}
+	@media (max-width: 576px) {
+		flex-direction: column;
 	}
 `;
 
