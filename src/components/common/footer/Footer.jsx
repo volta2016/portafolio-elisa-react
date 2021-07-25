@@ -13,7 +13,11 @@ const Footer = () => {
 				<Copyright>
 					Hecho con <Heart /> © Copyright {new Date().getFullYear()} - Todos los
 					derechos reservados.{" "}
-					<LinkPortfolio to="https://voltauxui.cl/">
+					<LinkPortfolio
+						href="https://voltauxui.cl"
+						target="_blank"
+						rel="noreferrer"
+					>
 						www.voltauxui.cl
 					</LinkPortfolio>
 				</Copyright>

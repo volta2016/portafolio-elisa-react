@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const FooterCopiright = styled.footer`
@@ -40,7 +40,7 @@ export const Copyright = styled.p`
 	}
 `;
 
-export const LinkPortfolio = styled(Link)`
+export const LinkPortfolio = styled.a`
 	margin-left: 0.5rem;
 	color: ${({ theme }) => theme.colors.secondary.secondone};
 	font-size: ${({ theme }) => theme.sizeFont.sm};

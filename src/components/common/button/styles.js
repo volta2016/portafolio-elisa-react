@@ -1,7 +1,6 @@
-import { Link } from "react-router-dom";
 import styled, { css } from "styled-components";
 
-export const ButtonContainer = styled(Link)`
+export const ButtonContainer = styled.a`
 	cursor: pointer;
 	height: 49px;
 	min-width: 134px;

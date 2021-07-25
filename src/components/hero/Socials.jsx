@@ -16,7 +16,7 @@ export default function Socials({ redes }) {
 	return (
 		<SocialNetwork>
 			{redes.map((social, index) => (
-				<LinkSocial key={index} to="https://voltauxui.cl/">
+				<LinkSocial key={index} href="https://voltauxui.cl/">
 					{redesEnables.find((red) => red.name === social.name).component}
 				</LinkSocial>
 			))}

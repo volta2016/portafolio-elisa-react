@@ -11,7 +11,7 @@ const Header = () => {
 			<Container justify>
 				<Logo />
 				<NavBar />
-				<Button cv="true" tipo="link" link="#">
+				<Button cv="true" tipo="link" link="/">
 					<Descarga>descargar</Descarga>currículum
 				</Button>
 			</Container>

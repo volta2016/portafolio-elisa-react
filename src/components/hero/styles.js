@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 export const HeroContainer = styled.div`
 	display: flex;
@@ -17,7 +17,7 @@ export const SocialNetwork = styled.div`
 	list-style: none;
 `;
 
-export const LinkSocial = styled(Link)`
+export const LinkSocial = styled.a`
 	height: 44px;
 	padding: 0.5rem;
 	border-radius: 4px;

@@ -25,10 +25,23 @@ const Proyecto = ({ proyect }) => {
 					<TitleHtwo proyect>{name}</TitleHtwo>
 					<Paragraph proyect>{description}</Paragraph>
 					<Contain>
-						<Button tipo="link" link={url}>
+						<Button
+							link={url}
+							tipo="link"
+							role="link"
+							target="_blank"
+							rel="noreferrer"
+						>
 							VER PROYECTO
 						</Button>
-						<Button tipo="link" outline="true" link={repo}>
+						<Button
+							link={repo}
+							tipo="link"
+							role="link"
+							target="_blank"
+							rel="noreferrer"
+							outline="true"
+						>
 							<Github /> VER CÓDIGO
 						</Button>
 					</Contain>
