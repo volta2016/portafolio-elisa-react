@@ -7,7 +7,7 @@ url [see project](https://portafolio-elisa-react.vercel.app/).
 
 ## App Capture
 
-![screenshot](https://raw.githubusercontent.com/volta2016/weather-redux/master/src/assets/img/screenreadme/screely-1.png)
+![screenshot](https://raw.githubusercontent.com/volta2016/portafolio-elisa-react/master/public/images/portafolio-elisa.jpg?token=AE7I7SFHTIHSYBYPUI6H4TDA7WHQO)
 
 ### Built With
 
